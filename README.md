@@ -28,3 +28,6 @@ With this social media project, it was aimed to create a community that likes to
 4) Install project dependencies:
 ```pip install -r requirements.txt```
 
+5) You can now run the development server:
+```python manage.py runserver```
+
