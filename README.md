@@ -35,3 +35,7 @@ With this social media project, it was aimed to create a community that likes to
 <img src="projectimg/signin.png" width=800 height=400>
 
 <img src="projectimg/home.png" width=800 height=400>
+
+<img src="projectimg/profile.png" width=800 height=400>
+
+
