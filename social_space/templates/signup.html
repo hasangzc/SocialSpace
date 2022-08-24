@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+</head>
+<body>
+    <div id="login-window">
+        <div id="login-box" class="glassy-dark-bg rounded-custom">
+            <h2 id="login-header" class="logo-font">Sign Up</h2>
+
+            <div>
+                <style>
+                    h5{
+                        color: red;
+                    }
+                </style>
+                {% for message in messages %}
+                <h5>{{message}}</h5>
+                {% endfor %}
+            </div>
+            <form class="my-3" action="" method="POST">
+                {% csrf_token %}
+                <input class="input text-pale-ligt rounded-custom" name="username" id="username"  placeholder="Username" /><br />
+                <input class="input  rounded-custom" name="email" id="email"  placeholder="Email" /><br />
+                <input class="input rounded-custom" type="password" name="password" id="password"  placeholder="Password" /><br />
+                <input class="input rounded-custom" type="password" name="password2" id="password"  placeholder="PasswordAgain" /><br />
+                <br>
+                <input class="submit-btn" type="submit" value="Submit" />
+                <br><br>
+                <div class="text-center mt-5 space-x-2">
+                    <p class="text-base"> Do you have an account? <a style="color: white" href="/signin"> Login </a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

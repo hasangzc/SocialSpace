@@ -1,0 +1,31 @@
+body{
+    background-color: #F0F8FF;
+}
+
+.navbar-brand{
+    font-family: "Brush Script MT";
+}
+
+.container{
+    margin-top: 20px;
+}
+
+
+.profile-photo {
+    width:48px;
+    height:auto;
+}
+
+.flex-menu {
+    display:flex;
+}
+
+.flex-menu li:not(:last-child) {
+    margin-right:40px;
+}
+
+.profile-informations{
+    margin-top: 30px;
+}
+
+

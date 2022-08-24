@@ -1,0 +1,70 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet"  href="{% static '/css/style.css' %}">
+	<link rel="stylesheet"  href="{% static '/css/settings.css' %}">
+	
+
+	</head>
+	<body style="background-color: black;">
+		<div class="bg-animation">
+		  <div id="stars"></div>
+		  <div id="stars2"></div>
+		  <div id="stars3"></div>
+		  <div id="stars4"></div>
+		</div>  
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+									<h3 style="color: white" class="mb-4 text-center">Hello <b>{{user.username}}</b>! <a href="/">Home</a></h3>
+									<div id="form-message-warning" class="mb-4 w-100 text-center"></div> 
+				      		<div id="form-message-success" class="mb-4 w-100 text-center">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" enctype="multipart/form-data">
+										{% csrf_token %}
+										<div class="row">
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<img width="100" height="100" src="{{user_profile.profileimg.url}}" />
+													<input type="file" class="form-control" name="image">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="location" id="location" value="{{user_profile.location}}" placeholder="Location">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Save" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</body>
+</html>
+
