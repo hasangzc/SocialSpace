@@ -7,3 +7,7 @@ With this social media project, it was aimed to create a community that likes to
 ### Built with
 * Python(Django)
 * Html, Css, Javascript, Bootstrap
+
+# Main Features
+## Lagin-Logout System
+
