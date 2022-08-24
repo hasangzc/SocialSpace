@@ -26,5 +26,5 @@ With this social media project, it was aimed to create a community that likes to
 ```git clone git@github.com/USERNAME/{{ project_name }}.git```
 
 4) Install project dependencies:
-pip install -r requirements.txt```
+```pip install -r requirements.txt```
 
