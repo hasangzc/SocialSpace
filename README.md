@@ -15,4 +15,16 @@ With this social media project, it was aimed to create a community that likes to
 * Settings page(Set Profile Picture and Location)
 * Account Page(See Blogs, Number of Followers, Number of Followers and number of blogs shared.)
 
+# Usage
+1) Create a virtualenv for project:
+```python3 -m venv venv```
+
+2) Activate your venv:
+```source venv/bin/activate```
+
+3) Clone this repo in your venv:
+```git clone git@github.com/USERNAME/{{ project_name }}.git```
+
+4) Install project dependencies:
+pip install -r requirements/local.txt```
 
