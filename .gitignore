@@ -136,7 +136,7 @@ dmypy.json
 /post_images
 /profile_images
 
-**/migrations
+
 *.DS_Store
 **/__pycache__
 **/.DS_Store
